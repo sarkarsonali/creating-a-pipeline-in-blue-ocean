@@ -17,7 +17,7 @@ pipeline {
         CI = 'true'
       }
       steps {
-        sh 'mvn test'
+        sh './jenkins/scripts/test.sh'
       }
     }
   }
