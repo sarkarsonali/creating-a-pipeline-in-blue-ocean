@@ -13,6 +13,9 @@ pipeline {
       }
     }
     stage('Test') {
+      environment {
+        CI = 'true'
+      }
       steps {
         sh 'mvn test'
       }
